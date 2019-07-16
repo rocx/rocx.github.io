@@ -1,18 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/styles/primitive.css">
-    <title>📦 rocx.rocks</title>
-  </head>
+---
+layout: default
+---
 
-  <body class="medium-container">
-    <h1>You have no idea what you're getting into.</h1>
-    <p>
-      And that's okay, because neither do I.
-      We're taking Cyberspace back one step at a time.
-      Better hold on to your butts, because the new world order is here
-      and it is going to stay.
-    </p>
-  </body>
-</html>
+<h1>You have no idea what you're getting into.</h1>
+<p>
+  And that's okay, because neither do I.
+  We're taking Cyberspace back one step at a time.
+  Better hold on to your butts, because the new world order is here
+  and it is going to stay.
+</p>
+
+{% if site.posts %}
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

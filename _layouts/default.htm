@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/styles/primitive.css">
+    {% if page.title %}
+    <title>{{ page.title }} :: 📦 rocx.rocks</title>
+    {% else %}
     <title>📦 rocx.rocks</title>
+    {% endif %}
   </head>
 
   <body class="small-container">

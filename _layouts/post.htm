@@ -4,6 +4,12 @@ layout: default
 
 <article>
   <h1>{{ page.title }}</h1>
+  <p class="text-right post-metadata">
+    published on
+    <time datetime="{{ post.date }}">
+      {{ page.date | date: "%a. %b. %d %Y" | downcase }}
+    </time>
+  </p>
   <hr>
 {{ content }}
 </article>

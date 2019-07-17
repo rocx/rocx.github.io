@@ -1,0 +1,10 @@
+---
+---
+
+// I'mma borrow a bit from you, Primitive.
+@import "base/variables";
+
+.post-metadata {
+    color: lighten($font-color, 25%);
+    font-style: italic;
+}

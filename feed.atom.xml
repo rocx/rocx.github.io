@@ -1,0 +1,36 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>rocx.rocks</title>
+  <id>https://rocx.rocks/</id>
+  <author>
+    <name>Box O'Rocks</name>
+    <email>rocx@rocx.rocks</email>
+    <uri>https://rocx.rocks</uri>
+  </author>
+  <updated>{{ "now" | date_to_xmlschema }}</updated>
+  <link href="{{ page.url | absolute_url }}" rel="self"/>
+  <link href="https://rocx.rocks/"/>
+  <icon>/assets/pictures/rocx_portrait.png</icon>
+  <logo>/assets/pictures/rocx_portrait.png</logo>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>{{ post.url | absolute_url }}</id>
+    <title>{{ post.title }}</title>
+    <link href="{{ post.url | absolute_url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    {% if post.abstract %}
+    <summary type="html">
+      {{ post.abstract | markdownify | xml_escape }}
+    </summary>
+    {% endif -%}
+    <content type="html">
+      {{ post.content | markdownify | xml_escape }}
+    </content>
+  </entry>
+  {% endfor %}
+</feed>

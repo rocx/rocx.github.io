@@ -1,0 +1,28 @@
+body {
+    background-color: $background-color;
+    color: $text-color;
+    max-width: 720px;
+    margin: auto;
+    padding: 2ch;
+    font-size: 12pt;
+    font-family: sans-serif;
+
+    ::selection {
+	background-color: $accent-color;
+	color: $background-color;
+    }
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    & {
+	color: $link-color;
+    }
+
+    &:active {
+	color: $accent-color;
+    }
+}

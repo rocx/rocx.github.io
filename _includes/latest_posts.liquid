@@ -1,0 +1,23 @@
+<div class="home-item">
+  <h1 class="home-item__header">Latest Posts</h1>
+  <div class="home-item__body">
+    {% if site.posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.posts limit:site.latest_posts_limit %}
+      <li class="post-list__item">
+	<a class="post-list__item__link" href="{{ post.url }}">
+	  {{ post.title }}
+	</a>
+      </li>
+      {%- endfor %}
+    </ul>
+    {% else %}
+    <p>
+      Aha!  I have coaxed you into a snafu!
+      There never <emph>were</emph> any posts!
+    </p>
+
+    <p>...yet.</p>
+    {%- endif %}
+  </div>
+</div>

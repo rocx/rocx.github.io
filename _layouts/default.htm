@@ -2,17 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: Replace with a local favicon. -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/3887832">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/styles/rocx.css">
     <link rel="alternate"  href="/feed.atom.xml"
-	  type="application/atom+xml" title="Writs on rocx.rocks">
-    {% if page.title %}
-    <title>{{ page.title }} :: 📦 rocx.rocks</title>
+          type="application/atom+xml" title="Writs on rocx.rocks">
+    {%- if page.title -%}
+    <title>{{ page.title }}{{ site.title_separator }}{{ site.name }}</title>
     {% else %}
-    <title>📦 rocx.rocks</title>
-    {% endif %}
+    <title>{{ site.name }}</title>
+    {% endif -%}
   </head>
 
   <body>
+    <header class="page-header">
+      <a href="/">rocx's rocks</a>
+    </header>
+    <!-- BEGIN_CONTENT -->
 {{ content }}
+    <!-- END_CONTENT -->
   </body>
 </html>

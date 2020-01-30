@@ -1,0 +1,17 @@
+{% if site.contacts %}
+<div class="home-item">
+  <h1 class="home-item__header"><code>rocx</code> Around the Web</h1>
+  <dl>
+    {%- for contact in site.contacts %}
+    <dt>{{ contact.name }}</dt>
+    <dd>
+      {%- if contact.title %}
+      <a href="{{ contact.uri }}">{{ contact.title }}</a>
+      {% else %}
+      <a href="{{ contact.uri }}">{{ contact.uri }}</a>
+      {%- endif %}
+    </dd>
+    {%- endfor %}
+  </dl>
+</div>
+{% endif %}

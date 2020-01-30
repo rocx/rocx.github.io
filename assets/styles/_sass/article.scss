@@ -1,0 +1,29 @@
+$line-height: 1.5;
+
+article {
+    & {
+	font-family: sans-serif;
+    }
+
+    p {
+	line-height: $line-height;
+	text-align: justify;
+
+	@media (max-width: 720px) {
+	    text-align: left;
+	}
+    }
+
+    h1 {
+	font-size: 20pt;
+	color: $link-color;
+	border-left: 1ch ridge $link-color;
+	padding: 0 0.5ch;
+	box-sizing: border-box;
+	//box-shadow: -4px 4px 4px rgba($link-color, 0.5);
+    }
+
+    li {
+	line-height: $line-height;
+    }
+}

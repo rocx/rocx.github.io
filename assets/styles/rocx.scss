@@ -1,0 +1,86 @@
+---
+---
+
+$background-color: #f6f6e9;
+$text-color: #081621;
+$link-color: #005792;
+$accent-color: #e63946;
+
+@import "defaults";
+@import "article";
+
+.page-header {
+    & {
+	// Disabling selection should be avoided at almost all cost.
+	// Exception would be UI-typed elements (such as buttons and navigation).
+	user-select: none;
+	border: 2px solid $text-color;
+	box-sizing: border-box;
+	color: $background-color;
+	background-color: $link-color;
+	padding: 1ch;
+    }
+
+    a, a:visited {
+	color: inherit;
+	font-size: 24pt;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+    }
+
+    a:hover {
+	text-decoration: underline;
+    }
+
+    a:active {
+	color: $accent-color;
+    }
+}
+
+.flex-columns {
+    display: flex;
+
+    @media only screen and (max-width: 720px) {
+	flex-direction: column;
+    }
+}
+
+.flex-column {
+    flex-grow: 1;
+    width: 50%;
+
+    @media only screen and (max-width: 720px) {
+	width: 100%;
+    }
+}
+
+.post-list {
+    & {
+
+    }
+
+    &__item {
+
+    }
+}
+
+.home-item {
+    & {
+	flex-grow: 1;
+	// width: calc(50% - 2ch);
+	padding: 0 1ch;
+	@media (resolution: 2dppx) {
+	}
+    }
+
+    &__header {
+	font-size: 12pt;
+	border-bottom: 2px solid $text-color;
+	text-align: center;
+    }
+
+    &__body {
+	
+    }
+}

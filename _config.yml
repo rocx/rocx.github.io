@@ -1,3 +1,13 @@
 permalink: "/writs/:title:output_ext"
 sass:
   sass_dir: "assets/styles/_sass"
+latest_posts_limit: 10
+name: "rocx.rocks"
+title_separator: " :: "
+contacts:
+  - name: "GitHub"
+    title: "rocx"
+    uri: "https://github.com/rocx"
+  - name: "eMail"
+    title: "rocx@rocx.rocks"
+    uri: "mailto:rocx+pub1@rocx.rocks" # I'll *know* when it gets scraped.

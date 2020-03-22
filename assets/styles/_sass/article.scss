@@ -2,28 +2,79 @@ $line-height: 1.5;
 
 article {
     & {
-	font-family: sans-serif;
+        font-family: sans-serif;
     }
 
     p {
-	line-height: $line-height;
-	text-align: justify;
+        line-height: $line-height;
+        text-align: justify;
 
-	@media (max-width: 720px) {
-	    text-align: left;
-	}
+        @media (max-width: 720px) {
+            text-align: left;
+        }
     }
 
     h1 {
-	font-size: 20pt;
-	color: $link-color;
-	border-left: 1ch ridge $link-color;
-	padding: 0 0.5ch;
-	box-sizing: border-box;
-	//box-shadow: -4px 4px 4px rgba($link-color, 0.5);
+        font-size: 20pt;
+        color: $link-color;
+        border-left: 1ch ridge $link-color;
+        padding: 0 0.5ch;
+        box-sizing: border-box;
+        //box-shadow: -4px 4px 4px rgba($link-color, 0.5);
+    }
+
+    h2 {
+        font-size: 18pt;
+        color: $link-color;
+        border-left: 0.5ch solid $link-color;
+        padding: 0 0.5ch;
+        box-sizing: border-box;
     }
 
     li {
-	line-height: $line-height;
+        line-height: $line-height;
+    }
+
+    kbd {
+        font-size: 90%;
+        background-color: #ddd;
+        //border: 1px solid grey;
+        border-radius: 2px;
+        box-shadow: 1px 1px 1px grey inset;
+        padding: 0 0.5ch;
+        box-sizing: border-box;
+    }
+
+    figure {
+        & {
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px inset rgba(black, 0.25);
+            background-color: rgba(black, 0.10);
+            border-radius: 4px 4px;
+            margin: 1ch;
+        }
+
+        a {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        figcaption {
+            //background-color: rgba(black, 0.35);
+            background: linear-gradient(to bottom, transparent 0%, rgba(black, 0.5) 80%);
+            color: $background-color;
+            font-style: italic;
+            padding: 0.5ch;
+            padding-top: 2ch;
+            border-radius: 0 0 4px 4px;
+        }
+    }
+
+    dl {
+	dt {
+	    font-weight: bold;
+	}
     }
 }

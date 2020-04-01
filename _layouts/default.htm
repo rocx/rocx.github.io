@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="/assets/styles/rocx.css">
     <link rel="alternate"  href="/feed.atom.xml"
           type="application/atom+xml" title="Writs on rocx.rocks">
-    {%- if page.title -%}
+    <script type="text/javascript"
+	    src="/assets/scripts/splash.js">
+    </script>
+    {%- if page.title %}
     <title>{{ page.title }}{{ site.title_separator }}{{ site.name }}</title>
     {% else %}
     <title>{{ site.name }}</title>
@@ -18,8 +21,13 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header id="splash-holder" class="page-header">
       <a href="/">rocx's rocks</a>
+      <noscript>
+	<div class="splash-text">
+	  {{ site.data.splash_texts | sample }}
+	</div>
+      </noscript>
     </header>
     <!-- BEGIN_CONTENT -->
 {{ content }}

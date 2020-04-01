@@ -9,6 +9,10 @@ $accent-color: #e63946;
 @import "defaults";
 @import "article";
 
+.splash-text {
+    font-size: 80%;
+}
+
 .page-header {
     & {
 	// Disabling selection should be avoided at almost all cost.

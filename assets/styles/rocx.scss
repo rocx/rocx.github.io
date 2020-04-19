@@ -7,6 +7,7 @@ $link-color: #005792;
 $accent-color: #e63946;
 $sans-serif: "Glacial Indifference", sans-serif;
 
+@import "mixins";
 @import "defaults";
 @import "article";
 
@@ -16,10 +17,8 @@ $sans-serif: "Glacial Indifference", sans-serif;
 
 .page-header {
     & {
-	// Disabling selection should be avoided at almost all cost.
-	// Exception would be UI-typed elements (such as buttons and navigation).
+	@include no-select;
 	font-family: "Jellee", sans-serif;
-	user-select: none;
     }
 
     a, a:visited {

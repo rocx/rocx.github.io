@@ -1,0 +1,5 @@
+// Disabling selection should be avoided at almost all costs.
+// UI elements (such as buttons and dials) *may* be an exception.
+@mixin no-select {
+    user-select: none;
+}

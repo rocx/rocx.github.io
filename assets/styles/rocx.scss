@@ -20,21 +20,16 @@ $sans-serif: "Glacial Indifference", sans-serif;
 	// Exception would be UI-typed elements (such as buttons and navigation).
 	font-family: "Jellee", sans-serif;
 	user-select: none;
-	border: 2px solid $text-color;
-	box-sizing: border-box;
-	color: $background-color;
-	background-color: $link-color;
-	padding: 1ch;
     }
 
     a, a:visited {
 	color: inherit;
 	font-size: 24pt;
-	text-decoration: none;
+	text-decoration: underline;
     }
 
     a:hover {
-	text-decoration: underline;
+	color: $link-color;
     }
 
     a:active {

@@ -5,14 +5,20 @@ $background-color: #f6f6e9;
 $text-color: #081621;
 $link-color: #005792;
 $accent-color: #e63946;
+$sans-serif: "Glacial Indifference", sans-serif;
 
 @import "defaults";
 @import "article";
+
+.splash-text {
+    font-family: $sans-serif;
+}
 
 .page-header {
     & {
 	// Disabling selection should be avoided at almost all cost.
 	// Exception would be UI-typed elements (such as buttons and navigation).
+	font-family: "Jellee", sans-serif;
 	user-select: none;
 	border: 2px solid $text-color;
 	box-sizing: border-box;
@@ -24,7 +30,6 @@ $accent-color: #e63946;
     a, a:visited {
 	color: inherit;
 	font-size: 24pt;
-	font-weight: bold;
 	text-decoration: none;
     }
 

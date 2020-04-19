@@ -5,7 +5,7 @@ body {
     margin: auto;
     padding: 2ch;
     font-size: 12pt;
-    font-family: "Glacial Indifference", sans-serif;
+    font-family: $sans-serif;
 
     ::selection {
 	background-color: $accent-color;

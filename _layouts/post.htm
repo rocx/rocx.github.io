@@ -5,12 +5,14 @@ is_post?: true
 
 <article>
   <h1>{{ page.title }}</h1>
+  {% if page.date %}
   <p class="text-right post-metadata">
     published on
     <time datetime="{{ post.date }}">
       {{ page.date | date: "%a. %b. %d %Y" | downcase }}
     </time>
   </p>
+  {% endif %}
   <hr>
 {{ content }}
 </article>

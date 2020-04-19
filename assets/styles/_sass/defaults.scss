@@ -5,12 +5,17 @@ body {
     margin: auto;
     padding: 2ch;
     font-size: 12pt;
-    font-family: sans-serif;
+    font-family: "Glacial Indifference", sans-serif;
 
     ::selection {
 	background-color: $accent-color;
 	color: $background-color;
     }
+}
+
+emph, i {
+    font-style: normal;
+    text-decoration: underline;
 }
 
 p {

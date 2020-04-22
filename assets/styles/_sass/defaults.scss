@@ -12,8 +12,8 @@ body {
     font-family: $sans-serif;
 
     ::selection {
-	background-color: $accent-color;
-	color: $background-color;
+	background-color: mix($link-color, $background-color, 25%);
+	color: $link-color;
     }
 }
 

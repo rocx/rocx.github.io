@@ -1,5 +1,33 @@
 $line-height: 1.5;
 
+.metadata {
+    & {
+	border: 2px solid $accent-color;
+	box-sizing: border-box;
+    }
+
+    .post-title {
+	color: $background-color;
+	background-color: $accent-color;
+	padding: 0.5ch 1ch;
+	margin: 0;
+	text-align: center;
+
+	&::selection {
+	    background-color: $link-color;
+	}
+    }
+
+    .post-date {
+	padding: 1ch;
+	margin: 0;
+
+	time {
+	    text-decoration: dotted underline;
+	}
+    }
+}
+
 article {
     p {
         line-height: $line-height;
@@ -12,12 +40,12 @@ article {
 
     h1 {
         font-size: 20pt;
-        color: $link-color;
+	color: $accent-color;
     }
 
     h2 {
         font-size: 18pt;
-        color: $link-color;
+        color: $accent-color;
     }
 
     li {

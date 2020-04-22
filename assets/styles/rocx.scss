@@ -19,6 +19,7 @@ $sans-serif: "Glacial Indifference", sans-serif;
     & {
 	@include no-select;
 	font-family: "Jellee", sans-serif;
+	margin-bottom: 1em;
     }
 
     a, a:visited {

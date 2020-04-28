@@ -37,10 +37,13 @@ article {
     h1 {
         font-size: 20pt;
 	color: $accent-color;
+	border-top: 6px double $accent-color;
+	border-bottom: 6px double $accent-color;
+	padding: 0.5ch 0;
     }
 
     h2 {
-        font-size: 18pt;
+        font-size: 16pt;
         color: $accent-color;
     }
 
@@ -50,11 +53,13 @@ article {
 
     kbd {
         font-size: 90%;
-        background-color: #ddd;
-        //border: 1px solid grey;
+	font-weight: bold;
+	font-family: monospace;
+        background-color: beige;
+        border: 1px solid grey;
         border-radius: 2px;
-        box-shadow: 1px 1px 1px grey inset;
-        padding: 0 0.5ch;
+        box-shadow: 1px 1px 1px grey;
+        padding: 0 1ch;
         box-sizing: border-box;
     }
 

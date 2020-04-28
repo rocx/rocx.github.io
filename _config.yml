@@ -11,3 +11,11 @@ contacts:
   - name: "eMail"
     title: "rocx@rocx.rocks"
     uri: "mailto:rocx+pub1@rocx.rocks" # I'll *know* when it gets scraped.
+
+show_drafts: true
+future: true
+strict_front_matter: true
+
+port: 8080
+host: "0.0.0.0"                 # To test via (W)LAN.
+livereload: true

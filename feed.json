@@ -1,0 +1,36 @@
+---
+---
+
+{
+    "version": "https://jsonfeed.org/version/1",
+    "user_comment": "Don't take this feed too seriously.  If you see a typo, that's probably just the newline-stripping filter.",
+    "title": "{{ site.name }}",
+    "home_page_url": "https://rocx.rocks/",
+    "feed_url": "https://rocx.rocks/feed.json",
+    "icon": "https://rocx.rocks/assets/rocx_portrait.png",
+    "hubs": [
+        {
+            "type": "application/atom+xml",
+            "url":  "https://rocx.rocks/atom.feed.xml"
+        }
+    ],
+    "author": {
+        "name": "Box O'Rocks",
+        "url": "https://rocx.rocks",
+        "avatar": "https://rocx.rocks/assets/rocx_portrait.png"
+    },
+    "items": [
+        {%- for post in site.posts %}
+        {
+	    "title": "{{ post.title }}",
+	    "url": "{{ site.url }}{{ post.url }}",
+	    "date_published": "{{ post.date | date: "%FT%T%z"}}"
+            "id": "{{ post.slug }}",
+            {% if post.abstract -%}
+            "summary": "{{ post.abstract | strip_newlines | xml_escape }}",
+            {%- endif %}
+            "content_html": "{{ post.content | strip_newlines | replace: '"', '\"'}}"
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+    ]
+}

@@ -2,7 +2,7 @@ permalink: "/writs/:title:output_ext"
 sass:
   sass_dir: "assets/styles/_sass"
 latest_posts_limit: 10
-name: "rocx.rocks"
+name: "rocx dot rocks"
 title_separator: " :: "
 contacts:
   - name: "GitHub"

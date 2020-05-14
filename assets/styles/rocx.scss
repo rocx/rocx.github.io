@@ -9,32 +9,11 @@ $sans-serif: "Glacial Indifference", sans-serif;
 
 @import "mixins";
 @import "defaults";
+@import "navigation";
 @import "article";
 
 .splash-text {
     font-family: $sans-serif;
-}
-
-.page-header {
-    & {
-	@include no-select;
-	font-family: "Jellee", sans-serif;
-	margin-bottom: 1em;
-    }
-
-    a, a:visited {
-	color: inherit;
-	font-size: 24pt;
-	text-decoration: underline;
-    }
-
-    a:hover {
-	color: $link-color;
-    }
-
-    a:active {
-	color: $accent-color;
-    }
 }
 
 .flex-columns {

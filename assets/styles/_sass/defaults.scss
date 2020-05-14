@@ -7,13 +7,12 @@ body {
     color: $text-color;
     max-width: 720px;
     margin: auto;
-    padding: 2ch;
     font-size: 12pt;
     font-family: $sans-serif;
 
     ::selection {
-	background-color: mix($link-color, $background-color, 25%);
-	color: $link-color;
+	background-color: mix($accent-color, $background-color, 15%);
+	color: $accent-color;
     }
 }
 

@@ -17,7 +17,7 @@
     <link rel="alternate"  href="/feed.json"
           type="application/json" title="Writs on rocx.rocks (JSON)">
     <script type="text/javascript"
-	    src="/assets/scripts/splash.js">
+	    src="/assets/scripts/fortune.js">
     </script>
     {%- if page.title %}
     <title>{{ page.title }}{{ site.title_separator }}{{ site.name }}</title>
@@ -27,14 +27,17 @@
   </head>
 
   <body>
-    <header id="splash-holder" class="page-header">
-      <a href="/">rocx dot rocks</a>
-      <noscript>
-	<div class="splash-text">
-	  {{ site.data.splash_texts | sample }}
-	</div>
-      </noscript>
+    <header class="site-header">
+      <nav class="site-nav">
+	<a href="/"
+	   class="site-nav__title site-nav__nav-item">
+	  {{ site.name }}</a>
+      </nav>
+      <span id="fortune-placeholder">
+	<noscript>{{ site.data.fortunes | sample }}</noscript>
+      </span>
     </header>
+
     <!-- BEGIN_CONTENT -->
     {{ content }}
     <!-- END_CONTENT -->

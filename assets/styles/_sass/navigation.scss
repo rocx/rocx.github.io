@@ -1,0 +1,46 @@
+.site-header {
+    margin-bottom: 1em;
+}
+
+#fortune-placeholder {
+    opacity: 0.5;
+    margin-left: 1ch;
+}
+
+.site-nav {
+    & {
+	display: flex;
+	justify-content: flex-start;
+    }
+
+    &__nav-item {
+	@include no-select;
+
+	color: $text-color;
+	align-self: baseline;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: lowercase;
+	padding: 1ch;
+	box-sizing: border-box;
+
+	&:active, &:hover {
+	    color: $accent-color;
+	    background-color: $background-color;
+	    text-decoration: underline;
+	}
+    }
+
+    &__title {
+	& {
+	    color: $background-color;
+	    background-color: $accent-color;
+	    font-family: "Jellee", sans-serif;
+	    text-decoration: none;
+	    margin: 0;
+	    padding: 1ch;
+	    
+	}
+    }
+}

@@ -9,11 +9,6 @@ body {
     margin: auto;
     font-size: 12pt;
     font-family: $sans-serif;
-
-    ::selection {
-	background-color: mix($accent-color, $background-color, 80%);
-	color: $background-color;
-    }
 }
 
 emph, i {

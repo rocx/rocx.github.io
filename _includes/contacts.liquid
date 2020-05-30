@@ -6,9 +6,9 @@
     <dt>{{ contact.name }}</dt>
     <dd>
       {%- if contact.title %}
-      <a rel="me" href="{{ contact.uri }}">{{ contact.title }}</a>
+      <a href="{{ contact.uri }}">{{ contact.title }}</a>
       {% else %}
-      <a rel="me" href="{{ contact.uri }}">{{ contact.uri }}</a>
+      <a href="{{ contact.uri }}">{{ contact.uri }}</a>
       {%- endif %}
     </dd>
     {%- endfor %}

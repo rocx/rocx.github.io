@@ -11,9 +11,6 @@ contacts:
   - name: "eMail"
     title: "rocx@rocx.rocks"
     uri: "mailto:rocx+pub1@rocx.rocks" # I'll *know* when it gets scraped.
-  - name: "Mastodon"
-    title: "@rocx@mstdn.io"
-    uri: "https://mstdn.io/@rocx"
 
 show_drafts: true
 future: true

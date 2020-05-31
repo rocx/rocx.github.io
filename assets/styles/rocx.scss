@@ -11,6 +11,7 @@ $sans-serif: "Glacial Indifference", sans-serif;
 @import "defaults";
 @import "navigation";
 @import "article";
+@import "rouge/tango.css";		// Rouge theme
 
 .splash-text {
     font-family: $sans-serif;

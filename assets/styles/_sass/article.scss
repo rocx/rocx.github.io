@@ -1,14 +1,26 @@
 $line-height: 1.5;
 
+@mixin boxed {
+    margin: 1ch 0;
+    padding: 0 1ch;
+    border-width: 1px;
+    border-style: double;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-radius: 4px;
+}
+
 .metadata {
     & {
-	border: 2px solid $accent-color;
-	box-sizing: border-box;
+	color: $background-color;
+	background-color: $accent-color;
+	border-radius: 4px;
+	border: 2px solid $background-color;
+	box-shadow: 0 0 0 2px $accent-color;
     }
 
     .post-title {
-	color: $background-color;
-	background-color: $accent-color;
+	color: inherit;
 	padding: 0.5ch 1ch;
 	margin: 0;
 	text-align: center;
@@ -25,6 +37,10 @@ $line-height: 1.5;
 }
 
 article {
+    & {
+	margin: 2ch;
+    }
+
     p {
         line-height: $line-height;
         text-align: justify;
@@ -93,6 +109,51 @@ article {
     dl {
 	dt {
 	    font-weight: bold;
+	}
+    }
+
+    blockquote {
+	@include boxed;
+	background-color: mix($background-color, $accent-color, 90%);
+	color: mix($text-color, $accent-color, 50%);
+	border-color: $accent-color;
+    }
+
+    table {
+	@include boxed;
+
+	& {
+	    border-collapse: collapse;
+	}
+
+	thead th, tfoot th {
+	    background-color: $text-color;
+	    color: $background-color;
+	    padding: 0 1ch;
+	}
+
+	td, th {
+	    margin: 8px;
+	}
+
+	tr:nth-child(even) {
+	    background-color: #ddd;
+	    border-top: 1px solid $text-color;
+	    border-bottom: 1px ridge $text-color;
+	}
+    }
+
+    .highlighter-rouge {
+	& {
+	    font-family: monospace;
+	}
+
+	&[class^="language-"] {
+	    @include boxed;
+	    display: block;
+	    font-size: small;
+	    padding: 1ch;
+	    overflow: auto visible;
 	}
     }
 }

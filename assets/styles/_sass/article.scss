@@ -148,7 +148,7 @@ article {
 	    font-family: monospace;
 	}
 
-	&[class^="language-"] {
+	&[class^="language-"]:not(.language-plaintext) {
 	    @include boxed;
 	    display: block;
 	    font-size: small;

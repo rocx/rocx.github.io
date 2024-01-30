@@ -1,0 +1,43 @@
+:root {
+    --cl-text: #16161d;
+    --cl-bg:   white;
+    --c-cardboard: #cb8d68;
+    --c-accent: teal;
+}
+
+body {
+    color: var(--cl-text);
+    background-color: var(--cl-bg);
+
+    padding-top: 2ch;
+
+    font-family: sans-serif;
+    text-align: justify;
+
+    font-size: 1rem;
+    max-width: 60ch;
+    margin: 0 auto;
+    padding: 2ch;
+}
+
+a:any-link {
+    color: var(--c-accent);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--c-accent);
+}
+
+body > header > .home {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+	color: #800000;
+    }
+}
+
+ul li {
+    list-style-type: square;
+}

@@ -1,0 +1,33 @@
+/* iA Writer Quattro made for iA Writer
+ * https://github.com/iaolo/iA-Fonts
+ *
+ * Doubt I'll add the woff2 files; need less Goog-pioneered stuff.
+ */
+
+@font-face {
+    font-family: "iA Writer Quattro";
+    src: url("quattro/iAWriterQuattroS-Regular.woff") format("woff");
+      /* url("quattro/iaWriterQuattroS-Regular.woff2") format("woff2) */
+}
+
+@font-face {
+    font-family: "iA Writer Quattro";
+    font-style: italic;
+    src: url("quattro/iAWriterQuattroS-Italic.woff") format("woff");
+      /* url("quattro/iaWriterQuattroS-Italic.woff2") format("woff2) */
+}
+
+@font-face {
+    font-family: "iA Writer Quattro";
+    font-weight: bold;
+    src: url("quattro/iAWriterQuattroS-Bold.woff") format("woff");
+      /* url("quattro/iaWriterQuattroS-Bold.woff2") format("woff2) */
+}
+
+@font-face {
+    font-family: "iA Writer Quattro";
+    font-weight: bold;
+    font-style: italic;
+    src: url("quattro/iAWriterQuattroS-BoldItalic.woff") format("woff");
+      /* url("quattro/iaWriterQuattroS-BoldItalic.woff2") format("woff2) */
+}

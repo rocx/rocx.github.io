@@ -1,3 +1,14 @@
+/* Fonts' file size isn't going to be a worry for me.
+ * While, yes, you want to keep things small,
+ * I have entire doodles and incomplete SVGs that take
+ * up more space than the fonts selected in one format.
+ * That's not even mentioning photographs and screenshots.
+ *
+ * At least there won't be auto-playing <video>s here.
+ */
+
+@import "fonts/ia-writer-quattro.css";
+
 :root {
     --cl-text: #16161d;
     --cl-bg:   white;
@@ -11,7 +22,7 @@ body {
 
     padding-top: 2ch;
 
-    font-family: sans-serif;
+    font-family: "iA Writer Quattro", sans-serif;
     text-align: justify;
 
     font-size: 1rem;
@@ -40,4 +51,12 @@ body > header > .home {
 
 ul li {
     list-style-type: square;
+}
+
+p {
+    line-height: 1.25;
+}
+
+code {
+    font-family: monospace;
 }

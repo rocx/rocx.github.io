@@ -7,6 +7,7 @@ layout: "default"
   BS was floating around in his head.
 </p>
 
+{% if site.posts.size > 0 %}
 <h1>Posts</h1>
 
 <ul>
@@ -14,3 +15,4 @@ layout: "default"
 <li><a href="{{ post.url }}">{{ post.title | xml_escape }}</a></li>
 {%- endfor %}
 </ul>
+{% endif %}

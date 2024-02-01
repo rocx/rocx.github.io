@@ -14,5 +14,13 @@
 host: "0.0.0.0" # Probably should fix. Lets me host on local networks anyway.
 
 # Content
-show_drafts: true
-
+show_drafts: false
+exclude: [ # Jekyll 3 *replaces* the default; Jekyll 4 adds.
+  ".sass-cache/",
+  ".jekyll-cache/",
+  "gemfiles/",
+  "Gemfile",
+  "Gemfile.lock",
+  "vendor/",
+  "Rakefile",
+]

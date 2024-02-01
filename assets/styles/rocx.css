@@ -10,15 +10,15 @@
 @import "fonts/ia-writer-quattro.css";
 
 :root {
-    --cl-text: #16161d;
-    --cl-bg:   white;
-    --c-cardboard: #cb8d68;
-    --c-accent: teal;
+    --rocx--light-fg:  #16161d;
+    --rocx--light-bg:  white;
+    --rocx--cardboard: #cb8d68;
+    --rocx--accent:    teal;
 }
 
 body {
-    color: var(--cl-text);
-    background-color: var(--cl-bg);
+    color:            var(--rocx--light-fg);
+    background-color: var(--rocx--light-bg);
 
     padding-top: 2ch;
 
@@ -32,11 +32,11 @@ body {
 }
 
 a:any-link {
-    color: var(--c-accent);
+    color: var(--rocx--accent);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--c-accent);
+    color: var(--rocx--accent);
 }
 
 body > header > .home {

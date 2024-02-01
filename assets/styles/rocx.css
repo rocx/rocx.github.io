@@ -9,6 +9,7 @@
 
 @import "fonts/ia-writer-quattro.css";
 @import "palettes/modus-operandi.css";
+@import "components/nav-header.css";
 
 /* It may look weird using variables to declare variables.
  * This just saves time from changing the variable everywhere.
@@ -44,12 +45,6 @@ a:any-link {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--rocx--accent);
-}
-
-body > header > .home {
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 ul li {

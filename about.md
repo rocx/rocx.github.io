@@ -1,6 +1,11 @@
 ---
-title: "Colophon"
+title: "About the Box"
 ---
+
+# About the Box
+
+Box O'Rocks, better known as `rocx`, is part programmer and part
+cartoonist and illustrator whenever he feels like it.
 
 # Colophon
 

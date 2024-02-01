@@ -1,0 +1,12 @@
+.nav-header > nav {
+    display: flex;
+    align-items: baseline;
+    gap: 2ch;
+
+    & > .home {
+	flex-grow: 2;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+    }
+}

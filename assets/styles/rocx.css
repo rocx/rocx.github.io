@@ -8,12 +8,15 @@
  */
 
 @import "fonts/ia-writer-quattro.css";
+@import "palettes/modus-operandi.css";
 
+/* It may look weird using variables to declare variables.
+ * This just saves time from changing the variable everywhere.
+ */
 :root {
-    --rocx--light-fg:  #16161d;
-    --rocx--light-bg:  white;
-    --rocx--cardboard: #cb8d68;
-    --rocx--accent:    teal;
+    --rocx--light-fg:  var(--modus-operandi--fg-main);
+    --rocx--light-bg:  var(--modus-operandi--bg-main);
+    --rocx--accent:    var(--modus-operandi--olive);
 }
 
 body {
@@ -33,6 +36,10 @@ body {
 
 a:any-link {
     color: var(--rocx--accent);
+
+    &:hover {
+	color: var(--modus-operandi--rust);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,10 +50,6 @@ body > header > .home {
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-
-    &:hover {
-	color: #800000;
-    }
 }
 
 ul li {

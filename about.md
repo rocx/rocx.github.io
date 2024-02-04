@@ -7,6 +7,10 @@ title: "About the Box"
 Box O'Rocks, better known as `rocx`, is part programmer and part
 cartoonist and illustrator whenever he feels like it.
 
+<p style="text-align: center;">
+  <img src="/assets/pictures/thinking.png"
+       style="max-width: 50%; margin: 0 auto"></p>
+
 # Colophon
 
 ## Site

@@ -46,3 +46,5 @@ intended for distribution.
 - [ ] Atom feed
 - [ ] Microformats in posts
   - [`h-entry`](http://microformats.org/wiki/h-entry)?
+- [ ] Series
+  - See [collections on Jekyll](https://jekyllrb.com/docs/collections/)

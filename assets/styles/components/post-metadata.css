@@ -1,0 +1,13 @@
+.post-metadata {
+    & .title {
+	margin-bottom: 0;
+    }
+
+    & .tag-list {
+	font-family: monospace;
+
+	& .tag:not(:last-child)::after {
+	    content: " · ";
+	}
+    }
+}

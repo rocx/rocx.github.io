@@ -1,9 +1,21 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en-us" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
-    <title>rocx.rocks</title>
+    <meta property="og:title" value="{{ page.title }}">
+    <meta property="og:url" value="https://rocx.rocks{{ page.url }}">
+    <meta property="og:image" value="/assets/pictures/banner.png">
+    {% if page.layout == "post" -%}
+    <meta property="og:type" value="article">
+    <meta property="og:published_time" value="{{ page.date | date: '%F' }}">
+    {% for tag in page.tags -%}
+    <meta property="og:tag" value="{{ tag }}">
+    {% endfor -%}
+    {% else %}
+    <meta property="og:type" value="website">
+    {% endif -%}
+    <title>{% if page.title %}{{ page.title }} :: {% endif %}rocx.rocks</title>
     <link href="/assets/styles/rocx.css" rel="stylesheet">
   </head>
   <body>

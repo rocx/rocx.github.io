@@ -68,3 +68,10 @@ img {
 	max-width: 50% !important;
     }
 }
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1ch;
+    border-left: 1ch solid var(--rocx--accent);
+}

@@ -81,3 +81,8 @@ blockquote {
 sub, sup {
     line-height: 0; /* Keeps from changing line height */
 }
+
+div.highlighter-rouge {
+    font-size: 0.9rem;
+    overflow-x: scroll;
+}

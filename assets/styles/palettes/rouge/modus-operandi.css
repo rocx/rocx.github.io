@@ -1,0 +1,35 @@
+/* https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
+ * Need to specify .highlighter-rouge on a div because
+ * APPARENTLY that class gets put on inline code too.
+ *
+ * Either way, this won't be a perfect one-to-one variant
+ * of the Emacs theme since font-lock and Rouge indicate
+ * syntax differently.
+ * For example: .nf will highlight function names in both
+ * definitions and calls in the CSS while the font-lock
+ * theme does not.
+*/
+div.highlighter-rouge {
+    border: 1px inset var(--modus-operandi--border);
+    padding: 1ch;
+    border-radius: 1ch;
+
+    /* Keyword */
+    & .k { color: var(--modus-operandi--magenta-cooler); }
+
+    /* Name.Function */
+    & .nf { color: var(--modus-operandi--magenta); }
+
+    /* Name.Constant */
+    & .no { color: var(--modus-operandi--cyan-cooler); }
+
+    /* Comment
+     * Comment.Multiline
+     * Comment.Preproc
+     * Comment.Single (at end of line)
+     * Comment.Special (eg. metadata in doc-comments)
+     */
+    & :is(.c, .cm, .cp, .c1, .cs) {
+	color: var(--modus-operandi--fg-dim);
+    }
+}

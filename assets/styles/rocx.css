@@ -10,6 +10,7 @@
 @import "fonts/ia-writer-quattro.css";
 @import "fonts/ia-writer-mono.css";
 @import "palettes/modus-operandi.css";
+@import "palettes/rouge/modus-operandi.css";
 @import "components/nav-header.css";
 @import "components/post-metadata.css";
 

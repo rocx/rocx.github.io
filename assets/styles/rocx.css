@@ -75,3 +75,7 @@ blockquote {
     padding-left: 1ch;
     border-left: 1ch solid var(--rocx--accent);
 }
+
+sub, sup {
+    line-height: 0; /* Keeps from changing line height */
+}

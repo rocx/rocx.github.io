@@ -13,6 +13,7 @@
 @import "palettes/rouge/modus-operandi.css";
 @import "components/nav-header.css";
 @import "components/post-metadata.css";
+@import "components/fortune-cookie.css";
 
 /* It may look weird using variables to declare variables.
  * This just saves time from changing the variable everywhere.

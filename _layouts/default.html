@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title | xml_escape }}">
     <meta property="og:url" content="https://rocx.rocks{{ page.url }}">
     <meta property="og:image" content="https://rocx.rocks/assets/pictures/banner.png">
     {% if page.layout == "post" -%}
@@ -16,8 +16,9 @@
     <meta property="og:type" content="website">
     {% endif -%}
     <link href="/assets/pictures/boxface.svg" rel="icon">
-    <title>{% if page.title %}{{ page.title }} :: {% endif %}rocx.rocks</title>
     <link href="/assets/styles/rocx.css" rel="stylesheet">
+    <script src="/assets/scripts/rocx.js" type="module"></script>
+    <title>{% if page.title %}{{ page.title | xml_escape }} :: {% endif %}rocx.rocks</title>
   </head>
   <body>
     {% include components/nav-header.html %}
